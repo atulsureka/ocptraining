@@ -1,14 +1,13 @@
-console.log("I am called.");
+var express = require('express');
+app = express();
 
-// const express = require('express');
-// const app = express();
-// const port = 3000;
+console.log("I am called......");
 
+app.get('/', function (req, res) {
+  res.send('Hello World!\n');
+});
 
-// app.get('/', (req, res) => {
-//   res.send('Hello World!');
-// })
+app.listen(8080, function () {
+  console.log('Example app listening on port 8080!');
+});
 
-// app.listen(port, () => {
-//   console.log("Example app listening at http://localhost:"+port);
-// })
